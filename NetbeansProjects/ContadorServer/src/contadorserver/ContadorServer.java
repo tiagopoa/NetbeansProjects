@@ -25,7 +25,7 @@ public class ContadorServer {
 	        
 	        try(ServerSocket serverSocket = new ServerSocket(portNumber);) {
 	            executor = Executors.newFixedThreadPool(5);
-	            System.out.println("Aguardando Eleitores");
+	            System.out.println("Aguardando Urnas conectarem...");
 	            while (true) {
 	                Socket clientSocket = serverSocket.accept();
                         Runnable worker = new RequestHandler(clientSocket);

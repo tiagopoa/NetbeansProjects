@@ -1,4 +1,4 @@
-package eleitorclient;
+package urnaclient;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import java.net.SocketException;
 import java.net.UnknownHostException;
 import java.util.Scanner;
 
-public class EleitorClient {
+public class UrnaClient {
 
 	public static void main(String[] args) throws IOException {
 		/*if (args.length != 2) {
